@@ -16,4 +16,6 @@ SELECT SUM(valor) FROM tb_carro;
 SELECT * FROM tb_carro ORDER BY modelo ASC;
 SELECT * FROM tb_carro ORDER BY modelo DESC;
 
-SELECT nome, COUNT(tb_carro) AS total_pedidos FROM tb_carro WHERE ano BETWEEN "2022" AND "2025" LEFT JOIN marca tb_carro 
+SELECT marca, COUNT(marca) AS total_registros FROM tb_carro WHERE ano BETWEEN '2022' AND '2025' GROUP BY marca;
+SELECT marca, COUNT(marca) AS total_registros FROM tb_carro WHERE ano LIKE '2023' GROUP BY marca;
+-- SELECT marca, COUNT(marca) AS total_registros FROM tb_carro WHERE ano = '2023' GROUP BY marca;
