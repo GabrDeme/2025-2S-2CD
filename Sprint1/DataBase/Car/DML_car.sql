@@ -43,6 +43,14 @@ INSERT INTO tb_proprietario (id_propriedade, nome, id_carro, idade) VALUES
 ('5','Lula','5','79'),
 ('6','Rodrigo Faro','6','51');
 
+INSERT INTO tb_historico (id_historico, data_modigicacao, id_carro, valor_anterior, valor_novo) VALUES
+(1, '2024-08-15', 1, 300.00, 35000.00),
+(2, '2024-08-16', 2, 80000.00, 75000.00),
+(3, '2024-08-17', 3, 125000.00, 120000.00),
+(4, '2024-08-18', 4, 145000.00, 140000.00),
+(5, '2024-08-19', 5, 78000.00, 77000.00),
+(6, '2024-08-20', 6, 88000.00, 85000.00);
+
 
 SELECT * FROM tb_proprietario WHERE id_propriedade = '7';
 UPDATE tb_proprietario SET id_propriedade = '7' WHERE id_propriedade = '6';
