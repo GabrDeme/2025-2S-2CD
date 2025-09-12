@@ -59,7 +59,7 @@ def send_response(status, content_type, content, message=False):
 def car_selection():
     selected_car = Carros.query.all()
 
-    json_car =[car.to_json()
+    json_car = [car.to_json()
                for car in selected_car]
     return send_response(200, "Car's list", json_car, "Faiz u elly")
 
